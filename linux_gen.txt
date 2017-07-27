@@ -1,0 +1,2 @@
+#unzip a gz to /usr/local
+sudo tar -C /usr/local -xzf ~/Downloads/go1.8.3.linux-amd64.tar.gz
