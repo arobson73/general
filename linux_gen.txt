@@ -1,2 +1,4 @@
 #unzip a gz to /usr/local
 sudo tar -C /usr/local -xzf ~/Downloads/go1.8.3.linux-amd64.tar.gz
+#updating
+`apt-get update` updates your current package metadata from the APT servers. `apt-get upgrade` upgrades your installed packages, based on information in the metadata, but keeps your Ubuntu and kernel versions the same. `apt-get dist-upgrade` upgrades to new kernel versions and you'll want to reboot afterwards.
