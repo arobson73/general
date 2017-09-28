@@ -5,3 +5,6 @@ sudo tar -C /usr/local -xzf ~/Downloads/go1.8.3.linux-amd64.tar.gz
 `apt-get upgrade` upgrades your installed packages, based on information in the metadata,
 but keeps your Ubuntu and kernel versions the same. `apt-get dist-upgrade` upgrades to new
 kernel versions and you'll want to reboot afterwards.
+
+keyboard settings
+sudo dpkg-reconfigure keyboard-configuration
