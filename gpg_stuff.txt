@@ -1,0 +1,8 @@
+#note i got the hex by clicking on webpage that had the pgp
+gpg --keyserver pool.sks-keyservers.net --recv-keys 0x6fc4c9f7f1be8fea
+
+gpg --fingerprint 0x6fc4c9f7f1be8fea
+
+gpg --verify file.asc Download.tar.gz
+
+also check the sha256 and md5
