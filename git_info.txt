@@ -70,3 +70,29 @@ git remote add name linktoyourfork
 git fetch name && git checkout master
 #if you make changes
 git push name
+
+#say i want to delete a branch
+git push --delete remotename branchname
+git branch --delete branchname
+
+#remove the head commit
+git reset --hard HEAD^
+
+#setup git for commits
+git config --global user.email "you@example.com"
+
+#get changes from remote
+git pull
+
+#send changes from local to remote
+git push remote_name local_branch
+
+#say i want to remove commits roll back. Do it on local, first , then remote step by step
+git reset --hard HEAD^
+git push -f remote_name local_branch
+
+
+
+
+#say i want to create a new file on master branch
+
