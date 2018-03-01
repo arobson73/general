@@ -1,0 +1,72 @@
+#create
+git init
+#status
+git status
+#for git to track files need to add them to staging area
+git add filename filenamex
+
+#if i change a file then use this to check for differences
+git diff filename
+
+#to put changes from the staging are to the repo use this
+git commit -m "Some description"
+
+#to view commits use this 
+git log
+
+#the commit currently on is known as head
+git show HEAD
+
+#say you want to go back to original file you edited. You could undo
+#the changes you made, but could also do this
+git checkout HEAD filename
+
+#if i add an updated file to staging area by mistake then to remove it do
+git reset HEAD filename
+
+#if you want to unwind a commit do this (the first 7 chars of the SHA of a previous commit)
+git reset commit_SHA	 
+
+#unstage file changes in the staging area
+git reset HEAD filename
+
+#to check which branch currently on
+git branch
+
+#to create a new branch from the master branch
+git branch new_branch
+
+#switch to new branch
+git checkout branch_name
+
+#say i make changes to fencing branch, then to merge i would switch back to master branch 
+#then merge in the changes. it knows changes to the file are newer so it fast forwards to these new
+#changes
+git checkout master
+git merge fencing
+
+#delete a branch
+git branch -d branch_name
+
+#clone a repo
+git clone remote_loc clone_name
+
+#a list of git project remotes
+git remote -v
+
+#fetch work from the remote to the local copy
+git fetch
+
+#to get these new changes into your local branch
+git merge origin/master
+
+#to share my branch with someone, or push a local branch to origin remote
+git push origin your_branch_name
+
+
+#summary for github usage
+first fork project, then
+git remote add name linktoyourfork
+git fetch name && git checkout master
+#if you make changes
+git push name
