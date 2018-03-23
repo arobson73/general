@@ -1,0 +1,6 @@
+#to start
+sudo -i service elasticsearch start
+#to stop
+sudo -i service elasticsearch stop
+#check its running
+curl -XGET 'localhost:9200/?pretty'
