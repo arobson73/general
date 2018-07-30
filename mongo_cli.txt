@@ -1,0 +1,4 @@
+show dbs //shows the dbs
+show collections //shows the collections in the db
+use db //switch to the db
+db.collection_name.find().pretty() //show details of the collection
