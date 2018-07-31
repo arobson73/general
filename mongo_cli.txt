@@ -4,3 +4,7 @@ use db //switch to the db
 db.collection_name.find().pretty() //show details of the collection
 db.dropDatabase() //remove a database
 //no init.d for mongo instead service script is in /lib/systemd/system
+//note you can start mongod like this
+mongod --dbpath ~/go/src/andy/booking/ --port 27017
+//also have 2 instances (if using localhost) 
+mongod --dbpath ~/go/src/andy/booking1/ --port 27018
