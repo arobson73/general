@@ -14,3 +14,5 @@ rabbitmq:3-management
 
 #cleanup
 docker system prune -a
+#show docker containers running
+docker container ls
