@@ -16,3 +16,5 @@ rabbitmq:3-management
 docker system prune -a
 #show docker containers running
 docker container ls
+#stop container
+docker stop container_id_or_name
