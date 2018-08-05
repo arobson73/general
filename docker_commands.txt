@@ -18,3 +18,20 @@ docker system prune -a
 docker container ls
 #stop container
 docker stop container_id_or_name
+
+#simple docker file (Dockerfile) (RUN happens during image build, CMD happens after)
+FROM debian:jessie
+MAINTAINER You <you@example.com>
+RUN echo 'Hello World' > /hello.txt
+CMD cat /hello.txt
+
+#can build this dockerfile like this
+docker image build -t test-image .
+
+#view it using
+docker image ls
+
+#run it using
+docker container run --rm test-image
+
+
