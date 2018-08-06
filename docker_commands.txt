@@ -50,3 +50,7 @@ docker container run --rm --network=test appropriate/curl http://web/
 docker volume create test
 #show it
 docker volume ls
+#use the volume (rm remove it after use)
+docker container run --rm -v test:/my-volume debian:jessie
+/bin/bash -c "echo Hello > /my-volume/test.txt"
+
