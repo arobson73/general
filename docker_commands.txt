@@ -34,4 +34,19 @@ docker image ls
 #run it using
 docker container run --rm test-image
 
+#create network
+docker network create test
+#check it like this
+docker network ls
 
+#docker webserver, runs nginx on port 80
+docker container run -d --name webserver -p 80:80 nginx
+#this is to run nginx via the test network
+docker container run -d --network=test --name=web nginx
+#this will bind the web to curl
+docker container run --rm --network=test appropriate/curl http://web/
+
+#docker volume for persistence if db container goes down, still want to retain the data
+docker volume create test
+#show it
+docker volume ls
