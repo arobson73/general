@@ -54,3 +54,5 @@ docker volume ls
 docker container run --rm -v test:/my-volume debian:jessie
 /bin/bash -c "echo Hello > /my-volume/test.txt"
 
+#test the persistence
+docker container run --rm -v test:/my-volume debian:jessie cat /my-volume/test.txt
