@@ -9,3 +9,5 @@ mongod --dbpath ~/go/src/andy/booking/ --port 27017
 //also have 2 instances (if using localhost) 
 mongod --dbpath ~/go/src/andy/booking1/ --port 27018
 lsof -n -i | grep mongo //check the port tcp etc
+#show the details of the collections
+db.some_collection.find().pretty()
