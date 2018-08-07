@@ -56,3 +56,6 @@ docker container run --rm -v test:/my-volume debian:jessie
 
 #test the persistence
 docker container run --rm -v test:/my-volume debian:jessie cat /my-volume/test.txt
+
+#connect to say a mongo shell
+docker exec -it db_name mongo
