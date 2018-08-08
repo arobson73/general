@@ -59,3 +59,7 @@ docker container run --rm -v test:/my-volume debian:jessie cat /my-volume/test.t
 
 #connect to say a mongo shell
 docker exec -it db_name mongo
+
+#docker push images to docker hub
+docker image build -t docker_username/image_name .
+docker image push docker_username/image_name    
