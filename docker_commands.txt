@@ -68,3 +68,11 @@ docker image push docker_username/image_name
 docker logs container
 #docker remove dangling images (none: none)
 docker rmi $(docker images -f "dangling=true" -q)
+
+#pushing to docker hub
+#login first
+docker login
+#tag the image
+docker tag c2d81670bf5a user_name/booking_frontend:firsttry
+#push it
+docker push user_name/booking_frontend
