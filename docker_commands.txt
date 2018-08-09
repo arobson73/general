@@ -66,3 +66,5 @@ docker image push docker_username/image_name
 
 #logging
 docker logs container
+#docker remove dangling images (none: none)
+docker rmi $(docker images -f "dangling=true" -q)
