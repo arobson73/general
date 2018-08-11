@@ -1,0 +1,13 @@
+#start cluster
+minikube start
+
+#cluster info
+kubectl cluster-info
+#nodes
+kubectl get nodes
+
+#deploy app
+kubectl run name --image=url_or_path --port=8080
+
+#show deployments
+kubectl get deployments
