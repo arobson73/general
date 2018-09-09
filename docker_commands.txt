@@ -84,3 +84,6 @@ docker load --input booking_frontend.tar
 
 #docker close all containers
 docker kill $(docker ps -q)
+
+#docker clean up everything
+docker system prune -a
