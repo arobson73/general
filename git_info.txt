@@ -169,3 +169,5 @@ git show Release_1_0
 git tag -d Release_1_0
 git push origin :Release_1_0
 
+#to delete unwanted files and ask / show what will happend before going ahead
+git clean -f -d --dry-run
