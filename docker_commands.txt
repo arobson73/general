@@ -81,3 +81,6 @@ docker push user_name/booking_frontend
 docker save booking_frontend > booking_frontend.tar
 #then when you need to use it
 docker load --input booking_frontend.tar
+
+#docker close all containers
+docker kill $(docker ps -q)
