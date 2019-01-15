@@ -8,3 +8,8 @@ kernel versions and you'll want to reboot afterwards.
 
 keyboard settings
 sudo dpkg-reconfigure keyboard-configuration
+
+#clear cache
+#!/bin/bash
+sync; sudo sh -c "echo 3 > /proc/sys/vm/drop_caches"
+
