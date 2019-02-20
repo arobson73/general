@@ -1,0 +1,116 @@
+#quite whatever your trying to run
+CTRL-G
+#CTRL X, release CTRL then press B. this is for buffer creation
+C-x b
+
+#increase font size
+C-x C+
+
+#kill buffer
+C-x k enter
+
+#open file
+C-x C-f
+
+#save file
+C-x C-s
+
+#mode(M is mapped to ALT on linux) 
+M-x clojure-mode
+M-x package-list-packages
+M-x package-refresh-contents
+M-x package-install
+###########
+#editing###
+###########
+##remove text to the right of the cursor
+C-k 
+#undo change
+C-/
+#begin of line
+C-a
+#first non white space char of line
+M-m
+#end of line
+C-e
+#move forward one character
+C-f
+#move backward one char
+C-b
+#move forward one word
+M-f
+#move backward one word
+M-b
+#regex search, C-s again to move to next match
+C-s
+#regex same but in reverse
+C-r
+#move to begin buffer
+M-<
+#move to end buffer
+M->
+#go to line
+M-g-g
+#select a region (spc is space bar)
+C-spc
+#example select a region then hit backspace to delete it
+
+#search and replace. highlight some text (C-spc), then do 
+M-x replace-string
+################
+#yanking text###
+################
+#kill region
+C-w
+#copy region to kill ring
+M-w
+#yank
+C-y
+#cycle through key ring
+#kill word
+M-d
+#kill line
+C-k
+#indent line
+TAB
+#new line and tab
+C-j
+#hippie command cycles through possible expansions of text before point
+M-/
+#delete all spaces and tabs around point
+M-\
+###########
+#help######
+###########
+#describe the function bound to the key binding
+C-h k key-binding
+#describe function
+C-h f
+#close help windows
+C-x o q
+
+############
+##windows###
+############
+#switch to another window
+C-x o
+#delete all other windows leaving the current one open
+C-x 1
+#split frame above below
+C-x 2
+#split frame side by side
+C-x 3
+#delete current frame
+C-x 0
+
+#note if creating a new function, have to C-c C-k compile before it can be run in the REPL
+
+#in the repl
+C-arrow keys to cycle through previous command that were run.
+
+#Cider show documentation, once read press q to quit buffer
+C-c C-d C-d
+
+#Cider search for arbitrary text across function names and documentation
+C-c C-d C-a
+
