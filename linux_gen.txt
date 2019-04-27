@@ -13,3 +13,6 @@ sudo dpkg-reconfigure keyboard-configuration
 #!/bin/bash
 sync; sudo sh -c "echo 3 > /proc/sys/vm/drop_caches"
 
+#ctags for c++
+ctags --c++-kinds=+p --fields=+iaS --extra=+q --language-force=C++
+
